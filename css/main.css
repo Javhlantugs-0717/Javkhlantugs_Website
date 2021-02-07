@@ -435,6 +435,15 @@ img {
   #about-c ul li:nth-child(even) div {
     right: 320px; } }
 
+@media (max-width: 650px) {
+  #home-a .specials,
+  #home-b .stats,
+  #home-c .process,
+  #contact-b .contact-info,
+  .items {
+    grid-template-columns: repeat(2, 1fr); }
+}
+
 @media (max-width: 500px) {
   #main-nav {
     flex-direction: column;
