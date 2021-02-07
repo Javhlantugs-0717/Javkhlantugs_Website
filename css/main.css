@@ -179,6 +179,9 @@ img {
   display: flex;
   justify-content: space-between;
   padding-top: 1rem; }
+  #main-nav .nav-1 {
+    border-bottom: none;
+  }
   #main-nav ul {
     display: flex; }
   #main-nav li {
@@ -453,12 +456,12 @@ img {
     #main-nav a {
       border-bottom: 3px #ffbc00 solid; }
   #header-home {
-    height: 10rem;
+    height: 15rem;
     border-bottom: 3px solid #ffbc00; }
     #header-home .header-content {
       display: none; }
   #header-inner {
-    height: 10rem; }
+    height: 15rem; }
   #home-a .specials,
   #home-b .stats,
   #home-c .process,
