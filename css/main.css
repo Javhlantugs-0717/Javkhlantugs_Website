@@ -1,6 +1,5 @@
 :root {
   --primary-color: rgba(142, 235, 204, 0.61);
-  --secondary-color: rgb(72, 255, 0);
   --overlay-color: rgba(147, 163, 76, 0.89);
   --menu-speed: 0.75s;
 }
@@ -528,7 +527,7 @@ img {
       font-size: 10px;
     }
     #header-home .header-content h1 {
-      font-size: 25px;
+      font-size: 20px;
     }
   #header-inner {
     height: 15rem; }
