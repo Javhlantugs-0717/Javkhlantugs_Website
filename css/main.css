@@ -467,17 +467,9 @@ img {
     #contact-b .contact-info div {
       padding: 1.5rem; }
 
-#main-footer {
-  background: #333;
-  color: #fff;
-  height: 5rem; }
-  #main-footer .footer-content {
-    display: flex;
-    justify-content: space-between;
-    height: 5rem;
-    align-items: center; }
+      /* Footer */
   #main-footer .social a .fab {
-    background: #f4f4f4;
+    display: inline;
     margin-right: 1rem;
     border: 2px #fff solid;
     border-radius: 50%;
@@ -485,9 +477,59 @@ img {
     width: 20px;
     line-height: 20px;
     text-align: center;
-    padding: 0.5rem; }
+    padding: 1rem; }
     #main-footer .social a .fab:hover {
       background: #ffbc00; }
+
+#main-footer {
+  width: 100%;
+}
+
+#main-footer img {
+  width: 200px;
+}
+
+#main-footer a {
+  color: #fff;
+}
+
+#main-footer .foot-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.5rem;
+}
+
+#main-footer .container > *:last-child {
+  background: #444;
+  grid-column: 1 / span 2;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+#main-footer .container div {
+  margin-top: 1rem;
+}
+
+#main-footer ul li a {
+  display: inline-block;
+  border-bottom: dotted 1px #fff;
+  width: 100%;
+}
+
+#main-footer ul li a:hover {
+  color: rgb(199, 198, 198);
+}
+
+#main-footer ul li {
+  padding: 1rem;
+}
+
+#main-footer ul > *:last-child a {
+  border: none;
+}
+
 
 @media (max-width: 800px) {
   #header-home {
@@ -506,6 +548,14 @@ img {
   #contact-b .contact-info,
   .items {
     grid-template-columns: repeat(2, 1fr); }
+  #main-footer .social {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  }
+  #main-footer .social a .fab {
+    line-height: 50px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -550,4 +600,7 @@ img {
   #about-c ul li:nth-child(even) div:before {
     left: -15px;
     border-width: 8px 16px 8px 0;
-    border-color: transparent #ccc transparent transparent; } }
+    border-color: transparent #ccc transparent transparent; }
+    #main-footer .foot-container {
+      display: block;
+    } }
